@@ -9,6 +9,8 @@ function App() {
     return words[Math.floor(Math.random() * words.length)]
   })
 
+  console.log()
+
   const [guessedLetters, setGuessedLetters] = useState<string[]>([])
 
   const incorrectLetter = guessedLetters.filter(letter => !wordToGuess.includes(letter))
